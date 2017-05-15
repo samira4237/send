@@ -7,7 +7,7 @@ define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 // read incoming info and grab the chatID
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
-$chatID = $update["message"]["chat"]["id"];
+$chatID = "72608783;
 		
 // compose reply
 $reply =  sendMessage();
